@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sebas Fotografía | Portafolio</title>
+<meta name="description" content="Portafolio de fotografía de eventos y graduaciones. Cobertura profesional de momentos especiales.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="grain"></div>
+
+<header class="site-header" id="top">
+  <nav class="nav">
+    <a href="#top" class="logo">SEBAS<span>.</span>FOTO</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#trabajo">Trabajo</a></li>
+      <li><a href="#sobre-mi">Sobre mí</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#contacto" class="nav-cta">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="hero-bg" style="background-image:url('assets/img/03-baile-escenario.jpg')"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="eyebrow">Fotografía de eventos &amp; retratos</p>
+      <h1>Momentos que<br>merecen quedarse.</h1>
+      <p class="hero-sub">Cobertura fotográfica de graduaciones, fiestas y celebraciones — capturando la energía real de cada instante.</p>
+      <a href="#trabajo" class="btn btn-light">Ver portafolio</a>
+    </div>
+    <a href="#trabajo" class="scroll-cue" aria-label="Bajar">
+      <span></span>
+    </a>
+  </section>
+
+  <section class="intro">
+    <div class="intro-inner">
+      <span class="intro-num">01</span>
+      <p>Diez fotografías, un mismo relato: la promoción <strong>Graduación 2025</strong>. Desde el retrato protocolar hasta el instante espontáneo en la pista de baile — así es como trabajo, buscando la emoción antes que la pose.</p>
+    </div>
+  </section>
+
+  <section class="gallery" id="trabajo">
+    <div class="section-head">
+      <span class="eyebrow">Portafolio</span>
+      <h2>Selección de trabajo</h2>
+    </div>
+    <div class="grid" id="galleryGrid">
+      <!-- items injected by JS -->
+    </div>
+  </section>
+
+  <section class="about" id="sobre-mi">
+    <div class="about-grid">
+      <div class="about-media">
+        <img src="assets/img/10-birrete-mama-thumb.jpg" alt="Momento capturado durante una sesión de graduación" loading="lazy">
+      </div>
+      <div class="about-text">
+        <span class="eyebrow">Sobre mí</span>
+        <h2>Cuento historias con luz y paciencia.</h2>
+        <p>Soy fotógrafo de eventos especializado en graduaciones, quinceañeros y celebraciones familiares. Mi enfoque combina el retrato dirigido con la fotografía documental: estoy ahí para las poses perfectas, pero también para las risas que nadie planeó.</p>
+        <p>Cada entrega incluye edición cuidada, selección curada de las mejores tomas y entrega digital en alta resolución.</p>
+        <div class="stats">
+          <div><strong>300+</strong><span>fotos por evento</span></div>
+          <div><strong>48h</strong><span>entrega de avance</span></div>
+          <div><strong>100%</strong><span>momentos reales</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services" id="servicios">
+    <div class="section-head">
+      <span class="eyebrow">Servicios</span>
+      <h2>Cómo puedo ayudarte</h2>
+    </div>
+    <div class="services-grid">
+      <article class="service-card">
+        <span class="service-num">01</span>
+        <h3>Graduaciones</h3>
+        <p>Cobertura completa del evento: ceremonia, sesión de fotos y fiesta de promoción.</p>
+      </article>
+      <article class="service-card">
+        <span class="service-num">02</span>
+        <h3>Retratos</h3>
+        <p>Sesiones individuales o familiares, en estudio o locación, con dirección de poses.</p>
+      </article>
+      <article class="service-card">
+        <span class="service-num">03</span>
+        <h3>Eventos sociales</h3>
+        <p>Quinceañeros, aniversarios y celebraciones — cobertura discreta de principio a fin.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="cta" id="contacto">
+    <div class="cta-inner">
+      <span class="eyebrow">Contacto</span>
+      <h2>¿Tienes un evento en mente?</h2>
+      <p>Escríbeme y conversemos sobre fecha, locación y paquete ideal para tu celebración.</p>
+      <a href="mailto:juancpb22@gmail.com" class="btn btn-dark">juancpb22@gmail.com</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>&copy; <span id="year"></span> Sebas Fotografía. Todos los derechos reservados.</p>
+</footer>
+
+<div class="lightbox" id="lightbox">
+  <button class="lb-close" id="lbClose" aria-label="Cerrar">&times;</button>
+  <button class="lb-arrow lb-prev" id="lbPrev" aria-label="Anterior">&#10094;</button>
+  <img src="" alt="" id="lbImage">
+  <button class="lb-arrow lb-next" id="lbNext" aria-label="Siguiente">&#10095;</button>
+  <p class="lb-caption" id="lbCaption"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
