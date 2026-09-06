@@ -1,4 +1,4 @@
-# Sebas Fotografía — Portafolio
+# JC Fotografía — Portafolio
 
 Sitio web estático de portafolio fotográfico, construido con HTML, CSS y JavaScript puro (sin frameworks ni dependencias de build).
 
